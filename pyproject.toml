@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "branches_cleanup"
+version = "0.1.0"
+description = "CLI tool to delete GitHub branches"
+authors = [ { name = "Your Name" } ]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.0",
+    "PyGithub>=1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
